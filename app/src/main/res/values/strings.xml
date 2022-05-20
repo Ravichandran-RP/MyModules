@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Modules</string>
+    <string name="title">LIST OF MODULES FOR AY2022</string>
+    <string name="modules">SCHOOL MODULES</string>
+    <string name="android">C346 ANDROID PROGRAMMING</string>
+    <string name="itservice">C382 IT SERVICE DELIVERY</string>
+    <string name="data">C322 DATA CENTRE AND CLOUD MANAGEMENT</string>
+    <string name="fyp">C300 FINAL YEAR PROJECT</string>
+</resources>
