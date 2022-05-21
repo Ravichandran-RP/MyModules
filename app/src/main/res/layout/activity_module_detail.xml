@@ -11,13 +11,13 @@
     <ImageView
         android:id="@+id/imageViewDisplay"
         android:layout_width="360dp"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="10dp" />
 
     <TextView
         android:id="@+id/textViewModCode"
@@ -25,12 +25,12 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="4dp" />
 
     <TextView
         android:id="@+id/textViewModName"
@@ -38,12 +38,12 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="4dp" />
 
     <TextView
         android:id="@+id/textViewYear"
@@ -51,12 +51,12 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="4dp" />
 
     <TextView
         android:id="@+id/textViewSem"
@@ -64,12 +64,12 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="4dp" />
 
     <TextView
         android:id="@+id/textViewCredit"
@@ -77,12 +77,12 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="4dp" />
 
     <TextView
         android:id="@+id/textViewVenue"
@@ -90,23 +90,7 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-    <TextView
-        android:id="@+id/textViewAbout"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/chilanka"
-        android:paddingLeft="10dp"
-        android:text="About"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#E31414"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Space
@@ -114,13 +98,29 @@
         android:layout_height="5dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/chilanka"
+        android:text="About"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#E31414"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:fontFamily="@font/indie_flower"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:fontFamily="@font/bai_jamjuree_medium_italic"
         android:text="textview"
         android:textColor="#152AD1"
-        android:textSize="20sp" />
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/buttonBack"

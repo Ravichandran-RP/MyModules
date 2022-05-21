@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,7 +34,7 @@ public class ModuleDetailActivity extends AppCompatActivity {
         modvenue=findViewById(R.id.textViewVenue);
         btnBack=findViewById(R.id.buttonBack);
         displayImage=findViewById(R.id.imageViewDisplay);
-        aboutmod=findViewById(R.id.textViewAbout);
+        aboutmod=findViewById(R.id.textViewInfo);
 
         Intent intentReceived = getIntent();
         String module=intentReceived.getStringExtra("module");
@@ -66,9 +67,7 @@ public class ModuleDetailActivity extends AppCompatActivity {
             modvenue.setText("Venue: E61H");
             aboutmod.setText("Students will develop competencies required to support and administer data centre and cloud computing services. " +
                     "The training includes impact assessment of governance, risk and compliance (GRC) in the cloud computing environment, " +
-                    "and students will also study cloud computing orchestration, service accounting and service cataloguing. " +
-                    "The module also prepares students to be industry ready for job opportunities such as system administrators in " +
-                    "enterprise data centres or hosting service providers and as cloud computing end-users.");
+                    "and students will also study cloud computing orchestration, service accounting and service cataloguing.");
 
         }
         else if(module.equalsIgnoreCase("C382")){
@@ -84,9 +83,8 @@ public class ModuleDetailActivity extends AppCompatActivity {
             modvenue.setText("Venue: E62B");
             aboutmod.setText("This module provides an overview of issues associated with managing and measuring service delivery. " +
                     "Using different scenarios, students will select a deployment model(s) to meet business requirements considering cost " +
-                    "and performance. They will be exposed to key performance indicators (KPIs) on service level agreements (SLAs) " +
-                    "that ensure stipulated levels of service quality and availability. These modules will also cover the availability, " +
-                    "business continuity and financial considerations involved in service delivery.");
+                    "and performance. These modules will also cover the availability, business continuity and financial " +
+                    "considerations involved in service delivery.");
         }
         else if(module.equalsIgnoreCase("C300")){
             String imagename = "fyp";
@@ -102,12 +100,14 @@ public class ModuleDetailActivity extends AppCompatActivity {
             aboutmod.setText("In this module, students will be equipped with skills to apply their domain knowledge through a team project " +
                     "to solve a real-world problem."+
                     "Students will apply the five steps in the project management process steps: initiating, planning, " +
-                    "executing, monitoring and controlling, and closing to work on a team project. They will use Gantt charts and tools for " +
-                    "budgeting and resource planning. There will be milestone checks incorporating supervisor input, with guidance for " +
-                    "corrective action if necessary."+ "Students will also learn how to gather and organize data, prepare technical reports " +
-                    "and make a presentation pitch to stakeholders. Students will be encouraged to adopt a multidisciplinary approach in the " +
-                    "design of their project.");
+                    "executing, monitoring and controlling, and closing to work on a team project.");
         }
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 }
