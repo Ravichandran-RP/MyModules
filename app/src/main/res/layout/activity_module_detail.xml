@@ -9,8 +9,8 @@
     tools:context=".ModuleDetailActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="300dp"
+        android:id="@+id/imageViewDisplay"
+        android:layout_width="360dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
         tools:srcCompat="@tools:sample/avatars" />
@@ -30,7 +30,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="8dp" />
 
     <TextView
         android:id="@+id/textViewModName"
@@ -43,7 +43,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="8dp" />
 
     <TextView
         android:id="@+id/textViewYear"
@@ -56,7 +56,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="8dp" />
 
     <TextView
         android:id="@+id/textViewSem"
@@ -69,7 +69,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="8dp" />
 
     <TextView
         android:id="@+id/textViewCredit"
@@ -82,7 +82,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="8dp" />
 
     <TextView
         android:id="@+id/textViewVenue"
@@ -95,7 +95,32 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="45dp" />
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chilanka"
+        android:paddingLeft="10dp"
+        android:text="About"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#E31414"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:fontFamily="@font/indie_flower"
+        android:text="textview"
+        android:textColor="#152AD1"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonBack"
@@ -103,5 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Back"
-        android:textColor="@color/white" />
+        android:textColor="@android:color/background_light"
+        app:backgroundTint="#F4DA54" />
+
 </LinearLayout>
